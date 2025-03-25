@@ -1,0 +1,23 @@
+<!-- bankloan_fraud.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Loan Fraud Detection</title>
+</head>
+<body>
+    <h2>Enter Loan Application Details</h2>
+    <form action="/predict" method="post">
+        Applicant Income: <input type="text" name="income"><br><br>
+        Loan Amount: <input type="text" name="loan_amount"><br><br>
+        Credit Score: <input type="text" name="credit_score"><br><br>
+        Employment Status: 
+        <select name="employment_status">
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+        </select><br><br>
+        Number of Previous Loans: <input type="text" name="previous_loans"><br><br>
+        <input type="submit" value="Check for Fraud">
+    </form>
+</body>
+</html>
